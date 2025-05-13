@@ -1,1 +1,39 @@
-/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "FontProjet", serif;
+  src: url(../font/AlfaSlabOne-Regular.ttf);
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-image: url(../images/fond.webp);
+}
+body .navbar {
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+}
+body .navbar .logo img {
+  width: 15rem;
+  margin-right: 3rem;
+  margin-left: 2rem;
+}
+body .navbar .titles h2 {
+  background-color: black;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 30px;
+  margin: 2rem 0rem;
+}
+body .navbar .titles h2 #date_du_jour {
+  font-size: 50px;
+}
+body .navbar #date_du_jour {
+  font-weight: bold;
+}
+
+@impot;/*# sourceMappingURL=style.css.map */
