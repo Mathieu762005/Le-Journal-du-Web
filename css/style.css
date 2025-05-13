@@ -75,10 +75,56 @@ body main .container {
   margin: 0 auto;
 }
 body main .container .container__card {
-  width: 15rem;
+  width: 30rem;
   height: auto;
   border: 1px solid black;
   margin-top: 2rem;
+  padding: 0.2rem;
+  background-color: #e1d7d6;
+}
+body main .container .container__card h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  padding-right: 150px;
+  padding-left: 0.3rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+body main .container .container__card .container__card--cadre {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .container .container__card .text-cadre {
+  background-color: #e34f43;
+  color: white;
+  padding: 0.3rem 3.3rem;
+  font-size: 1.5rem;
+}
+body main .container .container__card .corp {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.2rem;
+  margin-top: 1rem;
+}
+body main .container .container__card .btn {
+  display: flex;
+  justify-content: end;
+}
+body main .container .container__card button {
+  background-color: #581300;
+  color: white;
+  padding: 0.3rem 0.5rem;
+  font-size: 20px;
+}
+body main .container .container__card button:hover {
+  background-color: #e34f43;
 }
 
 @font-face {
