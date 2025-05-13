@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "typo";
+  src: url("../font/AlfaSlabOne-Regular.ttf");
+}
 * {
   padding: 0px;
   margin: 0px;
@@ -7,13 +11,13 @@ body {
   background-image: url(../images/fond.webp);
   width: 100%;
   height: auto;
-  font-family: "typo";
   margin-top: 1rem;
 }
 body header {
   width: 100%;
   height: auto;
   margin: 0 auto;
+  font-family: "typo";
 }
 body header .box1 {
   width: 100%;
@@ -26,20 +30,39 @@ body header .box1 .journale {
   padding-bottom: 0.5rem;
   color: white;
 }
+@media (max-width: 450px) {
+  body header .box1 .journale {
+    font-size: 0.6rem;
+    padding-right: 0.4rem;
+    padding-left: 0.1rem;
+    padding-bottom: 0.1rem;
+  }
+}
 body header nav {
   display: flex;
+  flex-direction: row;
   align-items: center;
   padding: 1rem 0rem;
 }
 body header nav .logo img {
   width: 18rem;
-  margin: 0rem 2rem;
+  margin: 0rem 1rem;
+}
+@media (max-width: 450px) {
+  body header nav .logo img {
+    width: 5rem;
+  }
 }
 body header nav h1 {
   color: rgb(83, 83, 83);
   font-weight: bolder;
   font-size: 2rem;
   margin-bottom: 0.5rem;
+}
+@media (max-width: 600px) {
+  body header nav h1 {
+    font-size: 1rem;
+  }
 }
 body header nav #web {
   background-color: black;
@@ -56,11 +79,22 @@ body header nav h2 {
   font-size: 3.3rem;
   font-weight: bold;
 }
+@media (max-width: 600px) {
+  body header nav h2 {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
 body header nav h3 {
   color: black;
   font-weight: bolder;
   font-size: 2rem;
   margin-top: 0.5rem;
+}
+@media (max-width: 600px) {
+  body header nav h3 {
+    font-size: 0.7rem;
+  }
 }
 body main {
   width: 100%;
@@ -73,25 +107,31 @@ body main .container {
   width: 90%;
   height: auto;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 body main .container .container__card {
   width: 30rem;
   height: auto;
-  border: 1px solid black;
   margin-top: 2rem;
   padding: 0.2rem;
   background-color: #e1d7d6;
+  box-shadow: 5px 10px 10px 4px rgb(41, 41, 41);
 }
 body main .container .container__card h3 {
   font-size: 3rem;
-  font-weight: bold;
   background-color: black;
   border-radius: 5px;
   color: white;
-  padding-right: 150px;
   padding-left: 0.3rem;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
+}
+@media (max-width: 450px) {
+  body main .container .container__card h3 {
+    font-size: 1.6rem;
+    padding: 0.3rem;
+    text-align: center;
+  }
 }
 body main .container .container__card .container__card--cadre {
   width: 100%;
@@ -113,21 +153,30 @@ body main .container .container__card .corp {
   padding: 0.2rem;
   margin-top: 1rem;
 }
+@media (max-width: 450px) {
+  body main .container .container__card .corp {
+    font-size: 2rem;
+  }
+}
 body main .container .container__card .btn {
   display: flex;
   justify-content: end;
+  margin-bottom: 0.3rem;
 }
 body main .container .container__card button {
   background-color: #581300;
   color: white;
-  padding: 0.3rem 0.5rem;
+  padding-top: 0.3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   font-size: 20px;
+  transition: 0.3s;
+  display: flex;
+}
+body main .container .container__card button i {
+  font-size: 30px;
 }
 body main .container .container__card button:hover {
+  transition: 0.3s;
   background-color: #e34f43;
-}
-
-@font-face {
-  font-family: "typo";
-  src: url("../base/_typography.scss");
 }/*# sourceMappingURL=style.css.map */
