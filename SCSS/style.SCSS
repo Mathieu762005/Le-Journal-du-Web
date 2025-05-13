@@ -1,7 +1,6 @@
 @use "base/typography";
 @import "base/variables";
 
-
 * {
   padding: 0px;
   margin: 0px;
@@ -158,9 +157,11 @@ body {
           font-weight: bold;
           padding: 0.2rem;
           margin-top: 1rem;
+          text-align: justify;
 
           @media (max-width: 450px) {
             font-size: 2rem;
+            text-align: justify;
           }
         }
 
@@ -178,8 +179,17 @@ body {
           font-size: 20px;
           transition: 0.3s;
           display: flex;
+
+          @media (max-width: 450px) {
+            font-size: 18px;
+          }
+
           i {
             font-size: 30px;
+
+            @media (max-width: 450px) {
+              font-size: 20px;
+            }
           }
         }
 
@@ -187,6 +197,24 @@ body {
           transition: 0.3s;
           background-color: #e34f43;
         }
+      }
+    }
+  }
+  footer {
+    background-color: #010125;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+
+    div {
+      font-weight: bold;
+      font-size: 1.5rem;
+      padding: 5rem 0rem;
+
+      @media (max-width: 450px) {
+        padding: 3rem 0rem;
       }
     }
   }

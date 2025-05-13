@@ -152,10 +152,12 @@ body main .container .container__card .corp {
   font-weight: bold;
   padding: 0.2rem;
   margin-top: 1rem;
+  text-align: justify;
 }
 @media (max-width: 450px) {
   body main .container .container__card .corp {
     font-size: 2rem;
+    text-align: justify;
   }
 }
 body main .container .container__card .btn {
@@ -173,10 +175,38 @@ body main .container .container__card button {
   transition: 0.3s;
   display: flex;
 }
+@media (max-width: 450px) {
+  body main .container .container__card button {
+    font-size: 18px;
+  }
+}
 body main .container .container__card button i {
   font-size: 30px;
+}
+@media (max-width: 450px) {
+  body main .container .container__card button i {
+    font-size: 20px;
+  }
 }
 body main .container .container__card button:hover {
   transition: 0.3s;
   background-color: #e34f43;
+}
+body footer {
+  background-color: #010125;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+body footer div {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 5rem 0rem;
+}
+@media (max-width: 450px) {
+  body footer div {
+    padding: 3rem 0rem;
+  }
 }/*# sourceMappingURL=style.css.map */
