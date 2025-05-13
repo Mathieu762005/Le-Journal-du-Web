@@ -1,1 +1,87 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-image: url(../images/fond.webp);
+  width: 100%;
+  height: auto;
+  font-family: "typo";
+  margin-top: 1rem;
+}
+body header {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+body header .box1 {
+  width: 100%;
+  text-align: end;
+}
+body header .box1 .journale {
+  text-align: end;
+  background-color: black;
+  padding-left: 5rem;
+  padding-bottom: 0.5rem;
+  color: white;
+}
+body header nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+body header nav .logo img {
+  width: 18rem;
+  margin: 0rem 2rem;
+}
+body header nav h1 {
+  color: rgb(83, 83, 83);
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+body header nav #web {
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  padding: 0.01rem 0.3rem;
+}
+body header nav h2 {
+  color: white;
+  background-color: black;
+  padding: 1rem;
+  margin-right: 2rem;
+  border-radius: 5px;
+  font-size: 3.3rem;
+  font-weight: bold;
+}
+body header nav h3 {
+  color: black;
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+body main {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+body main .container {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+body main .container .container__card {
+  width: 15rem;
+  height: auto;
+  border: 1px solid black;
+  margin-top: 2rem;
+}
+
+@font-face {
+  font-family: "typo";
+  src: url("../base/_typography.scss");
+}/*# sourceMappingURL=style.css.map */
