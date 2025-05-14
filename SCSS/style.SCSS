@@ -1,5 +1,6 @@
 @use "base/typography";
 @import "base/variables";
+@import "base/mixins" 
 
 * {
   padding: 0px;
@@ -8,13 +9,11 @@
 
 body {
   background-image: url(../images/fond.webp);
-  width: 100%;
-  height: auto;
+  @include htlg-auto;
   margin-top: 1rem;
 
   header {
-    width: 100%;
-    height: auto;
+    @include htlg-auto;
     margin: 0 auto;
     font-family: "typo";
 
@@ -100,8 +99,7 @@ body {
   }
 
   main {
-    width: 100%;
-    height: auto;
+    @include htlg-auto;
     margin: 0 auto;
 
     .container {
@@ -137,8 +135,7 @@ body {
         }
 
         .container__card--cadre {
-          width: 100%;
-          height: auto;
+          @include htlg-auto;
           margin: 0 auto;
           display: flex;
           flex-direction: column;
