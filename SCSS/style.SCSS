@@ -1,6 +1,6 @@
 @use "base/typography";
 @import "base/variables";
-@import "base/mixins" 
+@import "base/mixins";
 
 * {
   padding: 0px;
@@ -28,7 +28,7 @@ body {
         padding-bottom: 0.5rem;
         color: white;
 
-        @media (max-width: 450px) {
+        @media (max-width: $breakpoint-mobile) {
           font-size: 0.6rem;
           padding-right: 0.4rem;
           padding-left: 0.1rem;
@@ -38,16 +38,15 @@ body {
     }
 
     nav {
-      display: flex;
+      @include center;
       flex-direction: row;
-      align-items: center;
       padding: 1rem 0rem;
 
       .logo img {
         width: 18rem;
         margin: 0rem 1rem;
 
-        @media (max-width: 450px) {
+        @media (max-width: $breakpoint-mobile) {
           width: 5rem;
         }
       }
@@ -58,7 +57,7 @@ body {
         font-size: 2rem;
         margin-bottom: 0.5rem;
 
-        @media (max-width: 600px) {
+        @media (max-width: $breakpoint-mobile) {
           font-size: 1rem;
         }
       }
@@ -79,7 +78,7 @@ body {
         font-size: 3.3rem;
         font-weight: bold;
 
-        @media (max-width: 600px) {
+        @media (max-width: $breakpoint-mobile) {
           font-size: 1rem;
           padding: 0.5rem;
         }
@@ -91,7 +90,7 @@ body {
         font-size: 2rem;
         margin-top: 0.5rem;
 
-        @media (max-width: 600px) {
+        @media (max-width: $breakpoint-mobile) {
           font-size: 0.7rem;
         }
       }
@@ -127,7 +126,7 @@ body {
           padding-top: 0.3rem;
           padding-bottom: 0.3rem;
 
-          @media (max-width: 450px) {
+          @media (max-width: $breakpoint-mobile) {
             font-size: 1.6rem;
             padding: 0.3rem;
             text-align: center;
@@ -137,9 +136,8 @@ body {
         .container__card--cadre {
           @include htlg-auto;
           margin: 0 auto;
-          display: flex;
+          @include center;
           flex-direction: column;
-          align-items: center;
         }
 
         .text-cadre {
@@ -177,14 +175,14 @@ body {
           transition: 0.3s;
           display: flex;
 
-          @media (max-width: 450px) {
+          @media (max-width: $breakpoint-mobile) {
             font-size: 18px;
           }
 
           i {
             font-size: 30px;
 
-            @media (max-width: 450px) {
+            @media (max-width: $breakpoint-mobile) {
               font-size: 20px;
             }
           }
@@ -200,9 +198,8 @@ body {
   footer {
     background-color: #010125;
     color: white;
-    display: flex;
+    @include center;
     justify-content: center;
-    align-items: center;
     margin-top: 5rem;
 
     div {
@@ -210,7 +207,7 @@ body {
       font-size: 1.5rem;
       padding: 5rem 0rem;
 
-      @media (max-width: 450px) {
+      @media (max-width: $breakpoint-mobile) {
         padding: 3rem 0rem;
       }
     }

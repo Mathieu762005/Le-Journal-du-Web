@@ -30,7 +30,7 @@ body header .box1 .journale {
   padding-bottom: 0.5rem;
   color: white;
 }
-@media (max-width: 450px) {
+@media (max-width: 425px) {
   body header .box1 .journale {
     font-size: 0.6rem;
     padding-right: 0.4rem;
@@ -40,15 +40,15 @@ body header .box1 .journale {
 }
 body header nav {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  flex-direction: row;
   padding: 1rem 0rem;
 }
 body header nav .logo img {
   width: 18rem;
   margin: 0rem 1rem;
 }
-@media (max-width: 450px) {
+@media (max-width: 425px) {
   body header nav .logo img {
     width: 5rem;
   }
@@ -59,7 +59,7 @@ body header nav h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 425px) {
   body header nav h1 {
     font-size: 1rem;
   }
@@ -79,7 +79,7 @@ body header nav h2 {
   font-size: 3.3rem;
   font-weight: bold;
 }
-@media (max-width: 600px) {
+@media (max-width: 425px) {
   body header nav h2 {
     font-size: 1rem;
     padding: 0.5rem;
@@ -91,7 +91,7 @@ body header nav h3 {
   font-size: 2rem;
   margin-top: 0.5rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 425px) {
   body header nav h3 {
     font-size: 0.7rem;
   }
@@ -126,7 +126,7 @@ body main .container .container__card h3 {
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
 }
-@media (max-width: 450px) {
+@media (max-width: 425px) {
   body main .container .container__card h3 {
     font-size: 1.6rem;
     padding: 0.3rem;
@@ -138,8 +138,8 @@ body main .container .container__card .container__card--cadre {
   height: auto;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 body main .container .container__card .text-cadre {
   background-color: #e34f43;
@@ -175,7 +175,7 @@ body main .container .container__card button {
   transition: 0.3s;
   display: flex;
 }
-@media (max-width: 450px) {
+@media (max-width: 425px) {
   body main .container .container__card button {
     font-size: 18px;
   }
@@ -183,7 +183,7 @@ body main .container .container__card button {
 body main .container .container__card button i {
   font-size: 30px;
 }
-@media (max-width: 450px) {
+@media (max-width: 425px) {
   body main .container .container__card button i {
     font-size: 20px;
   }
@@ -196,8 +196,8 @@ body footer {
   background-color: #010125;
   color: white;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-top: 5rem;
 }
 body footer div {
@@ -205,7 +205,7 @@ body footer div {
   font-size: 1.5rem;
   padding: 5rem 0rem;
 }
-@media (max-width: 450px) {
+@media (max-width: 425px) {
   body footer div {
     padding: 3rem 0rem;
   }
